@@ -1,38 +1,59 @@
-.App {
-  text-align: center;
+.center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+#topNav {
+    position: absolute;
+    height: 25vh;
+    width: 100vw;
+    background-color: rgba(100, 148, 237, 0.437);
+    display: flex;
+    justify-content: space-between;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+#navList {
+
+    background-color: blueviolet;
+    height: 15vh;
+    width: 50vw;
+    padding-left: 6rem;
+    justify-content: start;
+    overflow: hidden;
+
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+#navListInner {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    background-color: aliceblue;
 }
 
-.App-link {
-  color: #61dafb;
+#navList li {
+    margin: 0rem 2rem;
+    text-wrap: nowrap;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+a {
+    text-decoration: none;
+}
+
+a:active {
+    color: white;
+}
+
+#lineCont {
+    position: relative;
+    left: 16vw;
+    width: 30rem;
+    background-color: aquamarine;
+    border-bottom: 1px solid white;
+    margin: 10vw;
+}
+
+#logoCont {
+    padding: 3.2vw;
+    background-color: red;
 }
