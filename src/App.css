@@ -6,19 +6,18 @@
 
 #topNav {
     position: absolute;
-    height: 25vh;
-    width: 100vw;
-    background-color: rgba(100, 148, 237, 0.437);
+    height: auto;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0);
     display: flex;
     justify-content: space-between;
 }
 
 #navList {
 
-    background-color: blueviolet;
     height: 15vh;
     width: 50vw;
-    padding-left: 6rem;
+    padding-left: 12vw;
     justify-content: start;
     overflow: hidden;
 
@@ -27,33 +26,120 @@
 #navListInner {
     display: flex;
     flex-direction: row;
+    align-items: center;
     list-style: none;
-    background-color: aliceblue;
+    height: 15vh;
+
 }
 
-#navList li {
-    margin: 0rem 2rem;
-    text-wrap: nowrap;
-}
+
 
 a {
+    margin: 0rem 2vw;
+    text-wrap: nowrap;
+    height: 15vh;
+    display: flex;
+    align-items: center;
     text-decoration: none;
+    font-family: "Barlow Condensed", serif;
+    font-size: 2vh;
+    font-weight: lighter;
+    font-style: normal;
+    letter-spacing: .4vh;
+    text-transform: uppercase;
 }
 
+.boldNums {
+    font-weight: bold;
+    font-size: larger;
+    padding-right: .5vw;
+}
+
+
+
+a,
 a:active {
     color: white;
+    text-decoration: none;
+
+}
+
+a:focus {
+    color: white;
+    border-bottom: 1.5vh solid rgb(255, 255, 255);
+}
+
+
+#topRightCont {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    backdrop-filter: blur(10px);
+    background-color: rgba(255, 255, 255, 0.054);
 }
 
 #lineCont {
+    display: block;
     position: relative;
-    left: 16vw;
-    width: 30rem;
-    background-color: aquamarine;
-    border-bottom: 1px solid white;
-    margin: 10vw;
+    right: 42vw;
+    bottom: 7.73vh;
+    border-bottom: 1px solid rgb(66, 62, 78);
+    width: 30vw;
 }
 
 #logoCont {
     padding: 3.2vw;
-    background-color: red;
+    background-color: rgba(255, 255, 255, 0);
+}
+
+
+/* something to change the bright scrollbar to a darker and more suited scrollbar */
+
+::-webkit-scrollbar {
+    width: .8vw;
+    background-color: rgb(43, 43, 43);
+}
+
+::-webkit-scrollbar-thumb {
+    border-radius: 1vw;
+    background-color: rgb(104, 104, 104);
+}
+
+@media screen and (max-width: 786px) and (max-height: 1024px) {
+
+    #lineCont {
+        display: none;
+    }
+
+    #logoCont {
+        padding: 4vh;
+    }
+
+    #topNav,
+    #topRightCont,
+    #navList,
+    #navListInner,
+    a {
+        height: 13vh;
+    }
+
+    #navList {
+        padding: 7vw;
+    }
+
+    a {
+        color: white;
+    }
+
+    #topRightCont {
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .boldNums {
+        display: none;
+    }
 }
