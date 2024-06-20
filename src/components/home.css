@@ -67,12 +67,47 @@
     color: rgb(0, 0, 0);
 }
 
-@media screen and (max-width: 786px) and (max-height: 1024px) {
+@media screen and (max-width: 760px) and (max-height: 1024px) {
 
     #cont {
         flex-direction: column;
         justify-content: center;
         align-items: center;
+        margin-bottom: 0;
+        background-image: url('../assets/home/background-home-tablet.jpg');
+        height: 100vh;
+    }
+
+    #mainCont {
+        width: 55vw;
+        margin: 10vh;
+        display: flex;
+        align-items: center;
+    }
+
+    #introText {
+        font-size: 1rem;
+        letter-spacing: .2rem;
+    }
+
+    #bigText {
+        font-size: 8rem;
+    }
+
+    #descText {
+        text-align: center;
+        line-height: 2rem;
+    }
+
+    #exploreCont {
+        border-radius: 100vh;
+        aspect-ratio: 1;
+        height: 30vh;
+        margin: 0;
+    }
+
+    #exploreText {
+        font-size: 4vh;
     }
 
 }

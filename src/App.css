@@ -106,7 +106,7 @@ a:focus {
     background-color: rgb(104, 104, 104);
 }
 
-@media screen and (max-width: 786px) and (max-height: 1024px) {
+@media screen and (max-width: 760px) and (max-height: 1024px) {
 
     #lineCont {
         display: none;
@@ -121,7 +121,8 @@ a:focus {
     #navList,
     #navListInner,
     a {
-        height: 13vh;
+        height: 9vh;
+        font-size: 1.3vh;
     }
 
     #navList {
