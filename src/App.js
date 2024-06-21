@@ -5,8 +5,13 @@ import Crew from './components/crew'
 import Technology from './components/technology'
 import { Routes, Route, Link } from 'react-router-dom'
 import logo from './assets/shared/logo.svg'
+import ham from './assets/shared/icon-hamburger.svg'
 
 function App() {
+
+  function openMenu() {
+
+  }
 
 
   return (
@@ -19,6 +24,11 @@ function App() {
         </div>
 
         <div id='topRightCont'>
+          <div id='navBtn'>
+            <button onClick={openMenu}>
+              <img src={ham} alt='menu' />
+            </button>
+          </div>
           <div id='navList' className='center'>
             <ul id='navListInner' >
               <li >

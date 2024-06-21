@@ -93,6 +93,9 @@ a:focus {
     background-color: rgba(255, 255, 255, 0);
 }
 
+#navBtn {
+    display: none;
+}
 
 /* something to change the bright scrollbar to a darker and more suited scrollbar */
 
@@ -143,4 +146,45 @@ a:focus {
     .boldNums {
         display: none;
     }
+}
+
+@media screen and (max-width: 375px) and (max-height: 667px) {
+
+    #logoCont {}
+
+    #topNav {
+        height: 16vh;
+        width: auto;
+        width: 100%;
+    }
+
+    #navBtn {
+        display: block;
+    }
+
+    #navBtn button {
+        border: none;
+        background-color: transparent;
+        padding: 5vw;
+    }
+
+    #navBtn button:active img {
+        filter: brightness(60%);
+    }
+
+    #logoCont img {
+        aspect-ratio: 1;
+        height: 10vw;
+    }
+
+    #topRightCont {
+        backdrop-filter: none;
+        background-color: inherit;
+    }
+
+    #navList {
+        display: none;
+    }
+
+
 }
