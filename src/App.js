@@ -3,6 +3,7 @@ import Home from './components/home'
 import Destination from './components/destination'
 import Crew from './components/crew'
 import Technology from './components/technology'
+import Testing from './components/testing'
 import { Routes, Route, Link } from 'react-router-dom'
 import logo from './assets/shared/logo.svg'
 import ham from './assets/shared/icon-hamburger.svg'
@@ -34,6 +35,9 @@ function App() {
               <li >
                 <Link to='/'> <span className='boldNums'>00</span>Home</Link>
               </li>
+              <li>
+                <Link to='/testing'><span className='boldNums'>0X</span> Testing</Link>
+              </li>
               <li  >
                 <Link to='/destination'><span className='boldNums'>01</span> Destination</Link>
               </li>
@@ -57,6 +61,7 @@ function App() {
         <Route path='/destination' element={<Destination />} />
         <Route path='/crew' element={<Crew />} />
         <Route path='/technology' element={<Technology />} />
+        <Route path='/testing' element={<Testing />} />
       </Routes>
     </div>
   );

@@ -66,6 +66,7 @@
     color: rgb(0, 0, 0);
 }
 
+/* tablet mode */
 @media screen and (max-width: 760px) and (max-height: 1024px) {
 
     #cont {
@@ -75,7 +76,7 @@
         margin-bottom: 0;
         background-image: url('../assets/home/background-home-tablet.jpg');
         background-size: cover;
-        height: 100vh;
+        /* height: 100vh; */
         padding-top: 10vh;
     }
 
@@ -103,8 +104,10 @@
     #exploreCont {
         border-radius: 100vh;
         margin: 0;
-        height: 30vw;
-        width: 30vw;
+        height: 90vh;
+        /* aspect-ratio: 1; */
+        width: 30vh;
+        background-color: red;
     }
 
     #exploreText {
@@ -113,6 +116,7 @@
 
 }
 
+/* mobile  mode*/
 @media screen and (max-width: 375px) and (max-height: 667px) {
     #cont {
         width: 100vw;

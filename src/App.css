@@ -109,6 +109,7 @@ a:focus {
     background-color: rgb(104, 104, 104);
 }
 
+/* tablet mode */
 @media screen and (max-width: 760px) and (max-height: 1024px) {
 
     #lineCont {
@@ -117,6 +118,11 @@ a:focus {
 
     #logoCont {
         padding: 4vh;
+    }
+
+    #logoCont img {
+        aspect-ratio: 1;
+        height: 4vw;
     }
 
     #topNav,
@@ -148,6 +154,7 @@ a:focus {
     }
 }
 
+/* mobile mode */
 @media screen and (max-width: 375px) and (max-height: 667px) {
 
     #logoCont {}

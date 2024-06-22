@@ -1,0 +1,68 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+#main_cont {
+    background-color: black;
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+}
+
+/* time to put some thought into all this */
+
+#contCont {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: end;
+    margin-top: 0;
+    margin: 0 10vw;
+    /* adds 20vw total to both sides */
+    height: 80vh;
+
+}
+
+#first_cont {
+    width: 40vw;
+    background-color: blue;
+}
+
+#sec_cont {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 20vw;
+    aspect-ratio: 1;
+    border-radius: 100vh;
+    background-color: red;
+}
+
+
+/* tablet mode */
+@media screen and (max-width: 760px) and (max-height: 1024px) {
+
+    #contCont {
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        padding-top: 20vh;
+    }
+
+    #first_cont {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #first_cont:first-child,
+    #first_cont:last-child {
+        font-size: 3vh;
+        text-align: center;
+    }
+
+}
+
+/* mobile  mode*/
+@media screen and (max-width: 375px) and (max-height: 667px) {}
