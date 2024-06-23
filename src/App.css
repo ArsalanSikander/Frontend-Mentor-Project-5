@@ -7,20 +7,23 @@
 #topNav {
     position: absolute;
     height: auto;
-    width: 100%;
-    background-color: rgba(255, 255, 255, 0);
+    width: 100vw;
+    background-color: rgba(255, 122, 122, 0);
     display: flex;
     justify-content: space-between;
 }
 
 #navList {
-
-    height: 15vh;
-    width: 50vw;
+    /* width: 50vw; */
     padding-left: 12vw;
     justify-content: start;
     overflow: hidden;
+}
 
+#navList,
+#navListInner,
+a {
+    height: 11vh;
 }
 
 #navListInner {
@@ -28,34 +31,39 @@
     flex-direction: row;
     align-items: center;
     list-style: none;
-    height: 15vh;
-
 }
 
-
+a,
+.boldNums {
+    font-family: "Barlow Condensed", serif;
+}
 
 a {
-    margin: 0rem 2vw;
+    margin: 0vw 2vw;
     text-wrap: nowrap;
-    height: 15vh;
     display: flex;
     align-items: center;
     text-decoration: none;
-    font-family: "Barlow Condensed", serif;
-    font-size: 2vh;
+    font-size: 1.4vw;
     font-weight: lighter;
     font-style: normal;
-    letter-spacing: .4vh;
+    letter-spacing: .4w;
     text-transform: uppercase;
+}
+
+li {
+    display: flex;
+    align-items: center;
 }
 
 .boldNums {
     font-weight: bold;
     font-size: larger;
     padding-right: .5vw;
+    display: flex;
+    justify-content: center;
+    /* for  4 links, it's 2vw */
 }
-
-
 
 a,
 a:active {
@@ -66,7 +74,7 @@ a:active {
 
 a:focus {
     color: white;
-    border-bottom: 1.5vh solid rgb(255, 255, 255);
+    border-bottom: 3px solid rgb(255, 255, 255);
 }
 
 
@@ -79,11 +87,13 @@ a:focus {
     background-color: rgba(255, 255, 255, 0.054);
 }
 
+
+
 #lineCont {
     display: block;
     position: relative;
-    right: 42vw;
-    bottom: 7.73vh;
+    right: 38vw;
+    bottom: 5.8vh;
     border-bottom: 1px solid rgb(66, 62, 78);
     width: 30vw;
 }
@@ -110,7 +120,7 @@ a:focus {
 }
 
 /* tablet mode */
-@media screen and (max-width: 760px) and (max-height: 1024px) {
+@media screen and (max-width: 1024px) and (max-height: 1366px) {
 
     #lineCont {
         display: none;
@@ -131,7 +141,7 @@ a:focus {
     #navListInner,
     a {
         height: 9vh;
-        font-size: 1.3vh;
+        font-size: 1.9vw;
     }
 
     #navList {
@@ -155,7 +165,7 @@ a:focus {
 }
 
 /* mobile mode */
-@media screen and (max-width: 375px) and (max-height: 667px) {
+@media screen and (max-width: 430px) and (max-height: 932px) {
 
     #logoCont {}
 
@@ -167,6 +177,7 @@ a:focus {
 
     #navBtn {
         display: block;
+        padding: 3.2vw;
     }
 
     #navBtn button {
