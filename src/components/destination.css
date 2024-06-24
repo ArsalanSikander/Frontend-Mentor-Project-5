@@ -1,4 +1,61 @@
-#mainDiv {
-    margin-top: 25vh;
+* {
+    margin: 0;
+    padding: 0;
+    color: white;
+}
+
+#mainDiv,
+#contBoth {
     width: 100vw;
+    height: 75vh;
+}
+
+#mainDiv {
+    padding-top: 25vh;
+    background-image: url('../assets/destination/background-destination-desktop.jpg');
+}
+
+#contBoth {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#firstCont {
+    width: 35vw;
+    border: 1px dotted lightgreen;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+}
+
+#firstCont p {
+    font-size: 1.6vw;
+    font-family: 'Barlow Condensed';
+    letter-spacing: .3vw;
+    text-transform: uppercase;
+}
+
+#firstCont p span {
+    letter-spacing: .1vw;
+    padding-right: .5vw;
+    color: gray;
+}
+
+#firstCont img {
+    padding-top: 10vh;
+    padding-left: 3vw;
+    aspect-ratio: 1;
+    width: 29vw;
+}
+
+#secCont {
+    width: 35vw;
+    background-color: lightblue;
+}
+
+ul {
+    display: flex;
+    flex-direction: row;
 }

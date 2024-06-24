@@ -57,7 +57,9 @@ function App() {
 
       <Routes>
         <Route index path='/' element={<Home />} />
-        <Route path='/destination' element={<Destination />} />
+        <Route path='/destination' element={<Destination />}>
+          <Route path='/destination/:destName' element={<Destination />} />
+        </Route>
         <Route path='/crew' element={<Crew />} />
         <Route path='/technology' element={<Technology />} />
         <Route path='/testing' element={<Testing />} />
