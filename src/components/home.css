@@ -4,6 +4,8 @@
     color: red;
 }
 
+
+
 #main_cont {
     width: 100vw;
     height: 100vh;
@@ -53,6 +55,7 @@
     font-weight: lighter;
     width: 75%;
     /* background-color: red; */
+
 }
 
 #sec_cont {

@@ -4,6 +4,7 @@
     align-items: center;
 }
 
+
 #topNav {
     position: absolute;
     height: auto;
@@ -107,7 +108,6 @@ a:focus {
     display: none;
 }
 
-/* something to change the bright scrollbar to a darker and more suited scrollbar */
 
 ::-webkit-scrollbar {
     width: .8vw;
@@ -127,7 +127,7 @@ a:focus {
     }
 
     #logoCont {
-        padding: 4vh;
+        padding: 4vw;
     }
 
     #logoCont img {

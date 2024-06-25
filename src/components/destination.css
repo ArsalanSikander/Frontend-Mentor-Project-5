@@ -4,18 +4,31 @@
     color: white;
 }
 
-#mainDiv,
-#contBoth {
-    width: 100vw;
-    height: 75vh;
+.barlowCondensed {
+    font-family: "Barlow Condensed", serif;
+}
+
+.barlow {
+    font-family: 'Barlow';
+}
+
+.upperCase {
+    text-transform: uppercase;
+}
+
+.lighter {
+    font-weight: lighter;
 }
 
 #mainDiv {
+    height: 90vh;
+    width: 100vw;
     padding-top: 25vh;
     background-image: url('../assets/destination/background-destination-desktop.jpg');
 }
 
 #contBoth {
+    width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -51,11 +64,65 @@
 }
 
 #secCont {
-    width: 35vw;
-    background-color: lightblue;
+    width: 31vw;
+    height: 50vh;
+    border: 1px dotted lightblue;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    margin-left: 9vw;
+}
+
+#secCont h1 {
+    font-family: 'Bellefair';
+    text-transform: uppercase;
+    font-size: 7vw;
+    font-weight: lighter;
+    padding-bottom: 3vh;
+}
+
+#secCont p {
+    font-size: 1.2vw;
+    font-family: 'Barlow';
+    line-height: 4.0vh;
+    font-weight: lighter;
+}
+
+#destSelCont {
+    position: relative;
+    right: 2vw;
+    padding-bottom: 4.2vh;
+}
+
+a {
+    height: 7vh;
 }
 
 ul {
     display: flex;
     flex-direction: row;
+}
+
+#contForLine {
+    height: 1px;
+    width: 100%;
+    border-bottom: 1px solid gray;
+    margin-top: 3vh;
+    margin-bottom: 2vh;
+}
+
+#statsCont {
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    width: 90%;
+}
+
+#statsCont div p:first-child {
+    text-transform: uppercase;
+}
+
+#travelCont {
+    padding-left: 8vw;
 }

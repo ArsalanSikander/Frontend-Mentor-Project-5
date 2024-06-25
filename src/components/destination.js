@@ -86,12 +86,12 @@ const Destination = ({ match }) => {
                     </div>
                     <h1>{destTitle}</h1>
                     <p>{destDesc}</p>
-                    <div id="lineCont">
 
-                    </div>
+                    <div id="contForLine"></div>
+
                     <div id="statsCont">
                         <div id="distCont">
-                            <p>avg. distance</p>
+                            <p >avg. distance</p>
                             <p>{destDist}</p>
                         </div>
                         <div id="travelCont">
