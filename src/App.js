@@ -35,9 +35,9 @@ function App() {
               <li >
                 <Link to='/'> <span className='boldNums'>00</span>Home</Link>
               </li>
-              {/* <li>
+              <li>
                 <Link to='/testing'><span className='boldNums'>0X</span> Testing</Link>
-              </li> */}
+              </li>
               <li  >
                 <Link to='/destination'><span className='boldNums'>01</span> Destination</Link>
               </li>
@@ -62,7 +62,9 @@ function App() {
         </Route>
         <Route path='/crew' element={<Crew />} />
         <Route path='/technology' element={<Technology />} />
-        <Route path='/testing' element={<Testing />} />
+        <Route path='/testing' element={<Testing />}>
+          <Route path='/testing/:tabName' element={<Testing />} />
+        </Route>
       </Routes>
     </div>
   );
