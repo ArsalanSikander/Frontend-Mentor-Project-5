@@ -1,21 +1,19 @@
-.center {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-
 #topNav {
     position: absolute;
     height: auto;
     width: 100vw;
     background-color: rgba(255, 122, 122, 0);
     display: flex;
+    justify-content: center;
+    align-items: center;
     justify-content: space-between;
 }
 
 #navList {
     /* width: 50vw; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
     padding-left: 12vw;
     justify-content: start;
     overflow: hidden;
@@ -70,7 +68,7 @@ a,
 a:active {
     color: white;
     text-decoration: none;
-
+    border-bottom: 3px solid transparent;
 }
 
 a:focus {
@@ -117,6 +115,10 @@ a:focus {
 ::-webkit-scrollbar-thumb {
     border-radius: 1vw;
     background-color: rgb(104, 104, 104);
+}
+
+#wholeSideMenu {
+    display: none;
 }
 
 /* tablet mode */
@@ -204,5 +206,25 @@ a:focus {
         display: none;
     }
 
+    #navListInner {
+        position: absolute;
+        top: 0;
+        right: 0;
+        flex-direction: column;
+    }
 
+    .visible {
+        display: flex;
+    }
+
+    .invisible {
+        display: none;
+    }
+
+    #wholeSideMenu {
+        background-color: red;
+        overflow: hidden;
+        height: 10vh;
+        width: 10vw;
+    }
 }

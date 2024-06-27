@@ -40,7 +40,10 @@ const Destination = ({ match }) => {
             <div id="contBoth">
 
                 <div id="firstCont">
+                    {/* text above the image */}
                     <p><span>01</span> pick your destination</p>
+
+                    {/* image of plant */}
                     <img src={destImg} alt="planet mars" />
                 </div>
 
