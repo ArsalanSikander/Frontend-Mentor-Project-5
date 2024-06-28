@@ -23,7 +23,7 @@ const Destination = ({ match }) => {
             case ('europa'):
                 setDestImg(europa);
                 break;
-            case ('Titan'):
+            case ('titan'):
                 setDestImg(titan);
                 break;
             default:

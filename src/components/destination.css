@@ -68,7 +68,7 @@
 
 #secCont {
     width: 31vw;
-    /* height: 50vh; */
+    height: 70vh;
     /* border: 1px dotted lightblue; */
     display: flex;
     flex-direction: column;

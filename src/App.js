@@ -8,6 +8,8 @@ import { Routes, Route, Link } from 'react-router-dom'
 import logo from './assets/shared/logo.svg'
 import ham from './assets/shared/icon-hamburger.svg'
 import { useState } from 'react';
+import DestinationItem from './components/destinationItem';
+import CrewMember from './components/crewMember';
 
 
 function App() {
@@ -74,9 +76,11 @@ function App() {
       <Routes>
         <Route index path='/' element={<Home />} />
         <Route path='/destination' element={<Destination />}>
-          <Route path='/destination/:destName' element={<Destination />} />
+          <Route path='/destination/:destName' element={<DestinationItem />} />
         </Route>
-        <Route path='/crew' element={<Crew />} />
+        <Route path='/crew' element={<Crew />} >
+          <Route path='/crew/:crewNum' element={<CrewMember />} />
+        </Route>
         <Route path='/technology' element={<Technology />} />
         <Route path='/testing' element={<Testing />}>
           <Route path='/testing/:tabName' element={<Testing />} />

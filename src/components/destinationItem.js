@@ -29,7 +29,7 @@ const DestinationItem = ({ destinationName }) => {
                 setDestDist('628 mil. km');
                 setDestTime('3 years');
                 break;
-            case ('Titan'):
+            case ('titan'):
                 setDestTitle('Titan');
                 setDestDesc('The only moon known to have a dense atmosphere other than Earth, Titan is a home away from home (just a few hundred degrees colder!). As a bonus, you get striking views of the Rings of Saturn.');
                 setDestDist('1.6 bil. km');

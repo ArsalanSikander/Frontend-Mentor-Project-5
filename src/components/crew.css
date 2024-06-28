@@ -1,0 +1,65 @@
+#outerCont {
+    width: 100vw;
+    height: auto;
+    padding-top: 20vh;
+    background-image: url('../assets/crew/background-crew-desktop.jpg');
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+#fOne {
+    border: 2px dotted purple;
+    align-items: start;
+}
+
+#crewMember p:first-child {
+    font-family: 'Barlow Condensed';
+    font-weight: lighter;
+    text-transform: uppercase;
+    font-size: 2.2vw;
+}
+
+#crewMember span {
+    padding-right: 1vw;
+    color: gray;
+    font-weight: bolder;
+}
+
+#sOne {
+    border: 2px dotted green;
+    align-items: end;
+}
+
+#fOne ul {
+    align-self: flex-end;
+}
+
+#fOne ul li a {
+    border: none;
+    margin: 1vw
+}
+
+#fOne ul li a:focus {
+    border: none;
+    color: white;
+}
+
+#fOne ul {
+    display: flex;
+    flex-direction: row;
+}
+
+.white {
+    background-color: white;
+    height: 1vw;
+    aspect-ratio: 1;
+    border-radius: 1vw;
+}
+
+.gray {
+    background-color: rgba(128, 128, 128, 0.549);
+    height: 1vw;
+    aspect-ratio: 1;
+    border-radius: 1vw;
+}
