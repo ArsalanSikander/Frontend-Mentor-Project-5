@@ -1,6 +1,6 @@
 #outerCont {
     width: 100vw;
-    height: auto;
+    height: 90vh;
     padding-top: 20vh;
     background-image: url('../assets/crew/background-crew-desktop.jpg');
     display: flex;
@@ -10,7 +10,20 @@
 
 #fOne {
     border: 2px dotted purple;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     align-items: start;
+    width: 40vw;
+    margin-right: 1vw;
+    margin-bottom: 10vh;
+}
+
+#crewMember {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 65vh;
 }
 
 #crewMember p:first-child {
@@ -20,19 +33,46 @@
     font-size: 2.2vw;
 }
 
+#memberInner {
+    border: 1px dotted orange;
+    width: 80%;
+    height: 42vh;
+}
+
 #crewMember span {
     padding-right: 1vw;
     color: gray;
     font-weight: bolder;
 }
 
-#sOne {
-    border: 2px dotted green;
-    align-items: end;
+#crewMember h2,
+#crewJob {
+    font-family: 'Bellefair';
+    font-size: 3vw;
+    text-transform: uppercase;
+    font-weight: lighter;
 }
 
-#fOne ul {
-    align-self: flex-end;
+
+#memberInner p:last-child {
+    font-family: 'Barlow';
+    font-weight: lighter;
+    margin-bottom: 10vh;
+    padding-top: 5vh;
+    line-height: 4vh;
+}
+
+
+#sOne {
+    border: 2px dotted green;
+    display: flex;
+    align-items: end;
+    justify-content: center;
+    width: 40vw;
+}
+
+#sOne img {
+    width: 30vw;
 }
 
 #fOne ul li a {
