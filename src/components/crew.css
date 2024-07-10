@@ -89,7 +89,10 @@
 
 #fOne ul li a {
     border: none;
-    margin: 1vw
+    margin: 1vw;
+    border-radius: 1vw;
+    height: 1vw;
+    aspect-ratio: 1;
 }
 
 #fOne ul li a:focus {
@@ -104,16 +107,10 @@
 
 .white {
     background-color: white;
-    height: 1vw;
-    aspect-ratio: 1;
-    border-radius: 1vw;
 }
 
 .gray {
     background-color: rgba(128, 128, 128, 0.549);
-    height: 1vw;
-    aspect-ratio: 1;
-    border-radius: 1vw;
 }
 
 @media screen and (max-width: 1024px) and (max-height: 1366px) {
@@ -184,4 +181,56 @@
     }
 }
 
-@media screen and (max-width: 430px) and (max-height: 932px) {}
+@media screen and (max-width: 430px) and (max-height: 932px) {
+
+    #outerCont,
+    #fOne {
+        flex-direction: column-reverse;
+        justify-content: start;
+    }
+
+    #fOne {
+        height: auto;
+    }
+
+    #meetMessage {
+        display: none;
+    }
+
+    #fOne ul {
+        padding: 4vw 0vw;
+    }
+
+    #fOne ul li a {
+        height: 1.5vw;
+    }
+
+    #sOne {
+        height: 40%;
+        padding-top: 10vh;
+    }
+
+    #crewImg {
+        height: 100%;
+    }
+
+    #crewJob {
+        font-size: 3.1vw;
+    }
+
+    #memberInner {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #memberInner h2 {
+        font-size: 5vw;
+    }
+
+    #memberInner p:last-child {
+        font-size: 3.2vw;
+        width: 90%;
+    }
+}
