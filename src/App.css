@@ -16,7 +16,7 @@
     align-items: center;
     padding-left: 12vw;
     justify-content: start;
-    overflow: hidden;
+    /* overflow: hidden; */
 }
 
 #navList,
@@ -180,6 +180,7 @@ a:focus {
     #navBtn {
         display: block;
         padding: 3.2vw;
+        z-index: 10;
     }
 
     #navBtn button {
@@ -202,29 +203,88 @@ a:focus {
         background-color: inherit;
     }
 
+    #blur {
+        position: absolute;
+        top: 0;
+        left: 0;
+        background-color: rgba(0, 0, 0, 0.696);
+        height: 100vh;
+        width: 100vw;
+        z-index: 0
+    }
+
+    .vis {
+        visibility: visible;
+    }
+
+    .inVis {
+        visibility: hidden;
+    }
+
     #navList {
-        display: none;
+        overflow: visible;
+        z-index: 9;
+        background-color: rgb(31, 33, 47);
+        border-bottom-left-radius: 10vw;
+        border-bottom-right-radius: 10vw;
+        position: absolute;
+        height: 100vh;
+        width: 100vw;
+        padding: 0;
+        left: 0;
+        justify-content: center;
+        align-items: center;
     }
 
     #navListInner {
-        position: absolute;
-        top: 0;
-        right: 0;
         flex-direction: column;
+
     }
 
-    .visible {
+    #navList,
+    #navListInner {
+        height: auto;
+    }
+
+    #navListInner {
+        padding: 9vw;
+        padding-top: 5vw;
+    }
+
+    #navListInner li h2 {
         display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 3vw;
+        padding-bottom: 9vw;
+        font-size: 9vw;
+        font-family: 'Barlow Condensed';
+        font-weight: lighter;
     }
 
-    .invisible {
-        display: none;
+    h2 img {
+        aspect-ratio: 1;
+        height: 8vw;
+        margin-right: 5vw;
     }
 
-    #wholeSideMenu {
-        background-color: red;
-        overflow: hidden;
-        height: 10vh;
-        width: 10vw;
+    #navListInner li a {
+        height: 8vh;
+        font-size: 4.5vw;
+        color: rgb(224, 224, 224);
     }
+
+    .up {
+        will-change: top;
+        top: 0;
+        transition: top cubic-bezier(0.075, 0.82, 0.165, 1) .5s;
+    }
+
+    .normal {
+        will-change: top;
+        top: -100vh;
+        transition: top cubic-bezier(0.215, 0.610, 0.355, 1) .7s;
+
+    }
+
 }

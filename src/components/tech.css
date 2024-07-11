@@ -1,0 +1,7 @@
+#mainTech {
+    background-image: url('../assets/technology/background-technology-desktop.jpg');
+    width: 100vw;
+    height: 100vh;
+    padding-top: 20vh;
+    /* the total height is 120vh */
+}

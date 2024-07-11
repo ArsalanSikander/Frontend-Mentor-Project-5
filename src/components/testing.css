@@ -34,10 +34,20 @@
     aspect-ratio: 1;
 }
 
+/* #tabHolder {
+    width: 40vw;
+    aspect-ratio: 1/1;
+}
+
+#tabHolder img {
+    width: 30vw;
+} */
+
+
 
 
 #holder {
-    background-color: lightgreen;
+    background-color: rgba(144, 238, 144, 0);
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -73,12 +83,12 @@
 }
 
 .right {
-    transform: translate(100%, 0%) scale(0.7);
+    transform: translate(100%, 0%) scale(0.0);
     transition: transform 0.5s cubic-bezier(0.57, 0, 0.25, 0.99);
 }
 
 .left {
-    transform: translate(-100%, 0%) scale(0.7);
+    transform: translate(-100%, 0%) scale(0.0);
     transition: transform 0.5s cubic-bezier(0.57, 0, 0.25, 0.99);
 
 }

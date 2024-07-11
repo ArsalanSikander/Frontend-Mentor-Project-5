@@ -19,35 +19,34 @@ function App() {
   const NavListInner = () => {
     return (
       <ul id='navListInner'  >
+        <li>
+          <h2 style={{ display: navActive ? 'flex' : 'none' }}> <img src={logo} alt="" /> Space Tourism</h2>
+        </li>
         <li >
-          <Link to='/'> <span className='boldNums'>00</span>Home</Link>
+          <Link to='/' onClick={toggleMenu}> <span className='boldNums'>00</span>Home</Link>
         </li>
         <li>
-          <Link to='/testing'><span className='boldNums'>0X</span> Testing</Link>
+          <Link to='/testing' onClick={toggleMenu}><span className='boldNums'>0X</span> Testing</Link>
         </li>
         <li  >
-          <Link to='/destination'><span className='boldNums'>01</span> Destination</Link>
+          <Link to='/destination' onClick={toggleMenu}><span className='boldNums'>01</span> Destination</Link>
         </li>
         <li>
-          <Link to='/crew'><span className='boldNums'>02</span> Crew</Link>
+          <Link to='/crew' onClick={toggleMenu}><span className='boldNums'>02</span> Crew</Link>
         </li>
         <li>
-          <Link to='/technology'><span className='boldNums'>03</span> Technology</Link>
+          <Link to='/technology' onClick={toggleMenu}><span className='boldNums'>03</span> Technology</Link>
         </li>
       </ul>
     )
   }
 
-  const SideNavigation = () => {
-    return (
-      <div id="wholeSideMenu" className={navActive ? 'visible' : 'invisible'}>
-        <NavListInner />
-      </div>
-    )
-  }
 
-  function ToggleMenu() {
-    setNavActive(!navActive);
+
+  function toggleMenu() {
+    if (window.matchMedia("(max-width: 430px)").matches) {
+      return setNavActive(!navActive);
+    }
   }
 
   return (
@@ -61,12 +60,12 @@ function App() {
 
         <div id='topRightCont'>
           <div id='navBtn'>
-            <button onClick={ToggleMenu}>
+            <button onClick={toggleMenu}>
               <img src={ham} alt='menu' />
             </button>
           </div>
-          {/* <SideNavigation /> */}
-          <div id='navList' >
+          <div id="blur" className={navActive ? 'vis' : 'inVis'}></div>
+          <div id='navList' className={navActive ? 'up' : 'normal'} >
             <NavListInner />
           </div>
           <div id='lineCont'></div>
