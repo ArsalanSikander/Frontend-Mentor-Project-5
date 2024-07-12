@@ -37,17 +37,22 @@ a,
     font-family: "Barlow Condensed", serif;
 }
 
+#navListInner li a,
 a {
     margin: 0vw 2vw;
     text-wrap: nowrap;
     display: flex;
     align-items: center;
     text-decoration: none;
-    font-size: 1.4vw;
+    font-size: 1.2vw;
     font-weight: lighter;
     font-style: normal;
     letter-spacing: .4w;
     text-transform: uppercase;
+}
+
+a {
+    font-size: 1.4vw;
 }
 
 li {

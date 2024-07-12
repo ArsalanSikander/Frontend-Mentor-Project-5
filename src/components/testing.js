@@ -6,6 +6,7 @@ import { useState } from 'react';
 
 const Testing = () => {
 
+    // this is not being used right now
     function moveFirst() {
         setFirstActive(true);
         setSecActive(false);
@@ -19,9 +20,17 @@ const Testing = () => {
     const [firstActive, setFirstActive] = useState(true);
     const [secActive, setSecActive] = useState(false);
 
+    // till here btw
+
+
+    //react part for custom carousel
+    const [carouselArr, setCarouselArr] = useState([]);
+
+
+
     return (
         <div id='maincont'>
-            <div id="holder">
+            {/* <div id="holder">
                 <div id="navigator">
                     <ul>
                         <li><Link to='/testing/one' onClick={moveFirst}>One</Link></li>
@@ -45,6 +54,19 @@ const Testing = () => {
                 <ol>
                     <li>We will move them using CSS classes!</li>
                 </ol>
+            </div> */}
+            <div id="customCarousel">
+                <div id="mainTab">
+                    <div id="prev">
+
+                    </div>
+                    <div id="curr">
+
+                    </div>
+                    <div id="next">
+
+                    </div>
+                </div>
             </div>
         </div>
     )

@@ -25,9 +25,9 @@ function App() {
         <li >
           <Link to='/' onClick={toggleMenu}> <span className='boldNums'>00</span>Home</Link>
         </li>
-        <li>
+        {/* <li>
           <Link to='/testing' onClick={toggleMenu}><span className='boldNums'>0X</span> Testing</Link>
-        </li>
+        </li> */}
         <li  >
           <Link to='/destination' onClick={toggleMenu}><span className='boldNums'>01</span> Destination</Link>
         </li>
@@ -79,6 +79,9 @@ function App() {
         </Route>
         <Route path='/crew' element={<Crew />} >
           <Route path='/crew/:crewNum' element={<CrewMember />} />
+        </Route>
+        <Route path='/tech' element={<Technology />}>
+          <Route path='/tech/:techNum'></Route>
         </Route>
         <Route path='/technology' element={<Technology />} />
         <Route path='/testing' element={<Testing />}>

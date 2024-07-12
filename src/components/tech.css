@@ -1,7 +1,105 @@
 #mainTech {
     background-image: url('../assets/technology/background-technology-desktop.jpg');
-    width: 100vw;
-    height: 100vh;
+    background-position: bottom;
+    background-size: cover;
+    width: 90vw;
+    height: 105vh;
     padding-top: 20vh;
+    padding-left: 10vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: cenn;
     /* the total height is 120vh */
+}
+
+
+#firstTech {
+    /* background-color: red; */
+    display: flex;
+    justify-content: start;
+}
+
+h2 {
+    font-family: 'Barlow Condensed';
+    font-weight: lighter;
+    text-transform: uppercase;
+    letter-spacing: .15vw;
+    font-size: 1.8vw;
+}
+
+h2 span {
+    font-weight: bold;
+    font-family: 'Barlow';
+    font-size: 1.8vw;
+    color: gray;
+    padding-right: 1.7vw;
+}
+
+#secondTech {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+#secondTech #innerCont {
+    display: flex;
+    flex-direction: row;
+    padding-top: 14vh;
+}
+
+#vehInfo {
+    /* background-color: green; */
+    width: 33vw;
+    padding-left: 4vw;
+}
+
+#vehInfo p:first-child {
+    text-transform: uppercase;
+    font-family: 'Barlow Condensed';
+    font-weight: lighter;
+    font-size: 1.2vw;
+    letter-spacing: .2vw;
+    margin-bottom: 1vh;
+}
+
+#vehInfo h1 {
+    font-family: 'Bellefair';
+    text-transform: uppercase;
+    font-weight: lighter;
+    font-size: 3.2vw;
+    margin-bottom: 2vh;
+}
+
+#vehInfo p:last-child {
+    font-family: 'Barlow';
+    font-weight: lighter;
+    line-height: 3.5vh;
+    font-size: 1.2vw;
+    width: 84%;
+}
+
+#theList li a {
+    border-radius: 8vw;
+    aspect-ratio: 1/1;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 3vh;
+}
+
+#vehImg img {
+    width: 40vw;
+}
+
+.white {
+    /* background-color: white; */
+    color: black;
+    border: 1px solid inherit;
+
+}
+
+.gray {
+    /* background-color: black; */
+    color: white;
+    border: 1px solid white;
 }
