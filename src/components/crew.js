@@ -8,6 +8,14 @@ import victor from '../assets/crew/image-victor-glover.png';
 import data from '../assets/data.json';
 import CrewMember from './crewMember';
 
+const RoundDiv = () => {
+    return (
+        <div className="roundDiv">
+
+        </div>
+    )
+}
+
 const Crew = () => {
 
     // same order as in the provided data.json file
@@ -31,9 +39,10 @@ const Crew = () => {
         setCrewImg(imgArr[crewNum - 1]);
     }
 
+    // no second argument as we want it to run on every render and avoid warning
     useEffect(() => {
         updateStats(crewNum);
-    }, [crewNum])
+    });
 
 
     return (
@@ -42,16 +51,16 @@ const Crew = () => {
                 <CrewMember crewName={crewName} crewNum={crewNum} crewDesc={crewDesc} crewJob={crewJob} />
                 <ul>
                     <li>
-                        <NavLink to='/crew/1' className={({ isActive }) => isActive ? 'white' : 'gray'} ></NavLink>
+                        <NavLink to='/crew/1' ><RoundDiv /></NavLink>
                     </li>
                     <li>
-                        <NavLink to='/crew/2' className={({ isActive }) => isActive ? 'white' : 'gray'} ></NavLink>
+                        <NavLink to='/crew/2' ><RoundDiv /></NavLink>
                     </li>
                     <li>
-                        <NavLink to='/crew/3' className={({ isActive }) => isActive ? 'white' : 'gray'} ></NavLink>
+                        <NavLink to='/crew/3' ><RoundDiv /></NavLink>
                     </li>
                     <li>
-                        <NavLink to='/crew/4' className={({ isActive }) => isActive ? 'white' : 'gray'} ></NavLink>
+                        <NavLink to='/crew/4' ><RoundDiv /></NavLink>
                     </li>
 
                 </ul>

@@ -10,7 +10,7 @@
 }
 
 #navList {
-    /* width: 50vw; */
+    width: 45vw;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -20,9 +20,12 @@
 }
 
 #navList,
-#navListInner,
-a {
+#navListInner {
     height: 11vh;
+}
+
+#navListInner li {
+    height: 100%;
 }
 
 #navListInner {
@@ -32,13 +35,14 @@ a {
     list-style: none;
 }
 
-a,
+
+#navListInner li a,
 .boldNums {
+    color: white;
     font-family: "Barlow Condensed", serif;
 }
 
-#navListInner li a,
-a {
+#navListInner li a {
     margin: 0vw 2vw;
     text-wrap: nowrap;
     display: flex;
@@ -49,16 +53,15 @@ a {
     font-style: normal;
     letter-spacing: .4w;
     text-transform: uppercase;
+    box-sizing: border-box;
+    border-bottom: 3px solid transparent;
+    height: 100%;
 }
 
-a {
-    font-size: 1.4vw;
+#navListInner li a:focus {
+    border-bottom: 3px solid white;
 }
 
-li {
-    display: flex;
-    align-items: center;
-}
 
 .boldNums {
     font-weight: bold;
@@ -69,17 +72,7 @@ li {
     /* for  4 links, it's 2vw */
 }
 
-a,
-a:active {
-    color: white;
-    text-decoration: none;
-    border-bottom: 3px solid transparent;
-}
 
-a:focus {
-    color: white;
-    border-bottom: 3px solid rgb(255, 255, 255);
-}
 
 
 #topRightCont {
@@ -145,8 +138,7 @@ a:focus {
     #topNav,
     #topRightCont,
     #navList,
-    #navListInner,
-    a {
+    #navListInner {
         height: 9vh;
         font-size: 1.9vw;
     }
@@ -155,8 +147,9 @@ a:focus {
         padding: 7vw;
     }
 
-    a {
-        color: white;
+    #navListInner li a {
+        font-size: 1.9vw;
+        letter-spacing: .2vw;
     }
 
     #topRightCont {
@@ -174,7 +167,6 @@ a:focus {
 /* mobile mode */
 @media screen and (max-width: 430px) and (max-height: 932px) {
 
-    #logoCont {}
 
     #topNav {
         height: 16vh;

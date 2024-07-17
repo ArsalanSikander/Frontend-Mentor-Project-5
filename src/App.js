@@ -35,7 +35,7 @@ function App() {
           <Link to='/crew' onClick={toggleMenu}><span className='boldNums'>02</span> Crew</Link>
         </li>
         <li>
-          <Link to='/technology' onClick={toggleMenu}><span className='boldNums'>03</span> Technology</Link>
+          <Link to='/tech' onClick={toggleMenu}><span className='boldNums'>03</span> Technology</Link>
         </li>
       </ul>
     )
@@ -83,7 +83,7 @@ function App() {
         <Route path='/tech' element={<Technology />}>
           <Route path='/tech/:techNum'></Route>
         </Route>
-        <Route path='/technology' element={<Technology />} />
+        <Route path='/tech' element={<Technology />} />
         <Route path='/testing' element={<Testing />}>
           <Route path='/testing/:tabName' element={<Testing />} />
         </Route>

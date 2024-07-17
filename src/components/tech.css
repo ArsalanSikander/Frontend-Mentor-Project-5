@@ -9,7 +9,6 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: cenn;
     /* the total height is 120vh */
 }
 
@@ -42,16 +41,14 @@ h2 span {
     justify-content: space-between;
 }
 
-#secondTech #innerCont {
+#innerCont {
     display: flex;
     flex-direction: row;
     padding-top: 14vh;
 }
 
 #vehInfo {
-    /* background-color: green; */
     width: 33vw;
-    padding-left: 4vw;
 }
 
 #vehInfo p:first-child {
@@ -79,27 +76,168 @@ h2 span {
     width: 84%;
 }
 
+
+#theList {
+    margin-right: 3vw;
+}
+
 #theList li a {
+    display: flex;
+    text-decoration: none;
+    font-family: 'Bellefair';
     border-radius: 8vw;
-    aspect-ratio: 1/1;
+    width: 6vw;
+    aspect-ratio: 1;
     justify-content: center;
     align-items: center;
-    margin-bottom: 3vh;
+    margin: 0;
+    font-size: 2.5vw;
+    font-weight: normal;
+}
+
+#theList li {
+    list-style-type: none;
+    margin: 1.8vw;
+    margin-top: 0;
 }
 
 #vehImg img {
     width: 40vw;
 }
 
-.white {
-    /* background-color: white; */
+.white1 {
     color: black;
-    border: 1px solid inherit;
-
+    background-color: white;
+    border: 0;
 }
 
-.gray {
-    /* background-color: black; */
+.gray1 {
     color: white;
     border: 1px solid white;
+}
+
+/* tablet mode */
+@media screen and (max-width: 1024px) and (max-height: 1366px) {
+    #mainTech {
+
+        background-image: url('../assets/technology//background-technology-tablet.jpg');
+        background-position: top;
+        height: 100%;
+        width: 100vw;
+        padding-top: 12vh;
+        padding-left: 0vw;
+        justify-content: start;
+    }
+
+    #firstTech {
+        padding-bottom: 3vh;
+        padding-left: 4vw;
+    }
+
+    #firstTech h2 {
+        font-size: 3vw;
+    }
+
+    h2 span {
+        font-size: 2.9vw;
+    }
+
+    #secondTech {
+        flex-direction: column-reverse;
+    }
+
+    #vehInfo {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 80%;
+        text-align: center;
+    }
+
+    #vehInfo p:first-child {
+        font-size: 2vw;
+        letter-spacing: .3vw;
+    }
+
+    #vehInfo h1 {
+        font-size: 6vw;
+    }
+
+    #vehInfo p:last-child {
+        font-size: 2vw;
+    }
+
+    #vehImg img {
+        width: 100vw;
+    }
+
+    #innerCont {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding-top: 7vh;
+        padding-bottom: 8vh;
+    }
+
+    #theList {
+        display: flex;
+        flex-direction: row;
+        margin-bottom: 4vh;
+    }
+
+    #theList li {
+        margin: 1.8vw;
+    }
+
+    #theList li a {
+        width: 10vw;
+        font-size: 4vw;
+    }
+}
+
+/* mobile mode  */
+@media screen and (max-width: 430px) and (max-height: 932px) {
+
+    #mainTech {
+        padding-top: 15vh;
+    }
+
+    #innerCont {
+        padding-top: 4vh;
+    }
+
+    #theList {
+        margin-bottom: 2vh;
+    }
+
+    #firstTech {
+        justify-content: center;
+        position: relative;
+        right: 3vw;
+    }
+
+    #firstTech h2 {
+        font-size: 5vw;
+    }
+
+    #firstTech h2 span {
+        font-size: 4.6vw;
+    }
+
+    #vehInfo p:first-child {
+        font-size: 4vw;
+        margin-bottom: 1.2vh;
+    }
+
+    #vehInfo h1 {
+        font-size: 7.5vw;
+        margin-bottom: 2vh;
+    }
+
+    #vehInfo p:last-child {
+        width: 95%;
+        font-size: 3.3vw;
+    }
+
 }

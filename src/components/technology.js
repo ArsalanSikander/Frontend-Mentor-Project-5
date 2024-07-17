@@ -10,7 +10,7 @@ import data from '../assets/data.json';
 const Technology = () => {
 
     var { techNum } = useParams();
-    techNum = techNum ? techNum : 2;
+    techNum = techNum ? techNum : 1;
     const imgArr = [launchVehicle, spacePort, spaceCap];
 
     const [vehName, setVehName] = useState(data.technology[0].name);
@@ -23,9 +23,10 @@ const Technology = () => {
         setVehImg(imgArr[techNum - 1]);
     }
 
+    // no second argument as we want it to run on every render and avoid warning
     useEffect(() => {
         updateStats(techNum);
-    }, [techNum])
+    })
 
     return (
         <div id='mainTech'>
@@ -36,13 +37,13 @@ const Technology = () => {
                 <div id="innerCont">
                     <ul id='theList'>
                         <li>
-                            <NavLink to='/tech/1' className={(isActive) => isActive ? 'white' : 'gray'}>1</NavLink>
+                            <NavLink to='/tech/1' className={({ isActive }) => isActive ? 'white1' : 'gray1'}>1</NavLink>
                         </li>
                         <li>
-                            <NavLink to='/tech/2' className={(isActive) => isActive ? 'white' : 'gray'}>2</NavLink>
+                            <NavLink to='/tech/2' className={({ isActive }) => isActive ? 'white1' : 'gray1'}>2</NavLink>
                         </li>
                         <li>
-                            <NavLink to='/tech/3' className={(isActive) => isActive ? 'white' : 'gray'}>3</NavLink>
+                            <NavLink to='/tech/3' className={({ isActive }) => isActive ? 'white1' : 'gray1'}>3</NavLink>
                         </li>
                     </ul>
                     <TechItem vehName={vehName} vehDesc={vehDesc} />
