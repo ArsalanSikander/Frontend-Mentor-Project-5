@@ -1,0 +1,37 @@
+{
+  "files": {
+    "main.css": "./static/css/main.f46d1ba6.css",
+    "main.js": "./static/js/main.6e1f2625.js",
+    "static/js/453.f6138db5.chunk.js": "./static/js/453.f6138db5.chunk.js",
+    "static/media/image-victor-glover.png": "./static/media/image-victor-glover.8a9a5424588b73ec61c2.png",
+    "static/media/image-anousheh-ansari.png": "./static/media/image-anousheh-ansari.2d647128496ddc638acd.png",
+    "static/media/image-mark-shuttleworth.png": "./static/media/image-mark-shuttleworth.fc30f35b05fc0bc4ee47.png",
+    "static/media/image-douglas-hurley.png": "./static/media/image-douglas-hurley.7540fbb61923064f065e.png",
+    "static/media/background-home-desktop.jpg": "./static/media/background-home-desktop.cdf3864ecbfdf20e8c3b.jpg",
+    "static/media/background-destination-desktop.jpg": "./static/media/background-destination-desktop.468b922c69bf5499b4bc.jpg",
+    "static/media/image-europa.png": "./static/media/image-europa.3e95f7d0a16fe2ebf4c6.png",
+    "static/media/background-home-tablet.jpg": "./static/media/background-home-tablet.bc9efcc3281fa6801077.jpg",
+    "static/media/image-spaceport-portrait.jpg": "./static/media/image-spaceport-portrait.85523db5de13057f36ea.jpg",
+    "static/media/background-crew-desktop.jpg": "./static/media/background-crew-desktop.88a3c692fd34eb311e04.jpg",
+    "static/media/image-titan.png": "./static/media/image-titan.d4b078f9ce17e686ae99.png",
+    "static/media/background-technology-desktop.jpg": "./static/media/background-technology-desktop.b7b589b3c0c5ef0811d4.jpg",
+    "static/media/image-europa.webp": "./static/media/image-europa.c3be32383f31d0f76d96.webp",
+    "static/media/image-moon.webp": "./static/media/image-moon.b5a3c90e9c8eeb2cb68d.webp",
+    "static/media/image-space-capsule-portrait.jpg": "./static/media/image-space-capsule-portrait.dd0ac138afef98c1666a.jpg",
+    "static/media/image-launch-vehicle-portrait.jpg": "./static/media/image-launch-vehicle-portrait.0c758955a178bdcc3230.jpg",
+    "static/media/background-home-mobile.jpg": "./static/media/background-home-mobile.13f7adecbcb3c3f170d8.jpg",
+    "static/media/background-technology-tablet.jpg": "./static/media/background-technology-tablet.48c38b028217ee0096c4.jpg",
+    "static/media/image-mars.webp": "./static/media/image-mars.7f55f721b4a64b7a56a8.webp",
+    "static/media/image-titan.webp": "./static/media/image-titan.80738bc61e5d1217a19a.webp",
+    "index.html": "./index.html",
+    "static/media/logo.svg": "./static/media/logo.565f7f2c0534403f11b71994f4311210.svg",
+    "static/media/icon-hamburger.svg": "./static/media/icon-hamburger.5273efa7c50e96ef3e51e7a2b54048ce.svg",
+    "main.f46d1ba6.css.map": "./static/css/main.f46d1ba6.css.map",
+    "main.6e1f2625.js.map": "./static/js/main.6e1f2625.js.map",
+    "453.f6138db5.chunk.js.map": "./static/js/453.f6138db5.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.f46d1ba6.css",
+    "static/js/main.6e1f2625.js"
+  ]
+}
