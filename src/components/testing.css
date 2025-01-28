@@ -34,18 +34,6 @@
     aspect-ratio: 1;
 }
 
-/* #tabHolder {
-    width: 40vw;
-    aspect-ratio: 1/1;
-}
-
-#tabHolder img {
-    width: 30vw;
-} */
-
-
-
-
 #holder {
     background-color: rgba(144, 238, 144, 0);
     display: flex;

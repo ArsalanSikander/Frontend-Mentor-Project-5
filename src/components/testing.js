@@ -30,7 +30,7 @@ const Testing = () => {
 
     return (
         <div id='maincont'>
-            {/* <div id="holder">
+            <div id="holder">
                 <div id="navigator">
                     <ul>
                         <li><Link to='/testing/one' onClick={moveFirst}>One</Link></li>
@@ -54,7 +54,7 @@ const Testing = () => {
                 <ol>
                     <li>We will move them using CSS classes!</li>
                 </ol>
-            </div> */}
+            </div>
             <div id="customCarousel">
                 <div id="mainTab">
                     <div id="prev">
